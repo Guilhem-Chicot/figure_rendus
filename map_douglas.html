@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6c89c76fbc7a87502e35681b6318c284 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    
+              <style>
+                .div_icon_b54767894e1ce1d3befcbf257ddb858e {
+                    
+            font-size:26px;
+            background-color: transparent;
+            border-color: transparent;
+            text-align: center;
+            
+                    }
+              </style>
+            
+    
+              <style>
+                .div_icon_52838fbd3a0b441792bc3f77d6de2a92 {
+                    
+            font-size:26px;
+            background-color: transparent;
+            border-color: transparent;
+            text-align: center;
+            
+                    }
+              </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_6c89c76fbc7a87502e35681b6318c284" ></div>
+        
+</body>
+<script>    
+    
+            var map_6c89c76fbc7a87502e35681b6318c284 = L.map(
+                "map_6c89c76fbc7a87502e35681b6318c284",
+                {
+                    center: [-36.6, -57.7],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ab056563540b35c520d696a2cf44fcfc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6c89c76fbc7a87502e35681b6318c284);
+        
+    
+            var marker_25d0f9bf8d806e0afc158ff693fc9e01 = L.marker(
+                [-34.6, -57.366667],
+                {}
+            ).addTo(map_6c89c76fbc7a87502e35681b6318c284);
+        
+    
+                var div_icon_b54767894e1ce1d3befcbf257ddb858e = L.divIcon({
+                    className: 'div_icon_b54767894e1ce1d3befcbf257ddb858e',
+                    iconSize: [150,36],
+                    iconAnchor: [150,0],
+                    html : "B.Aires",
+                    });
+                marker_25d0f9bf8d806e0afc158ff693fc9e01.setIcon(div_icon_b54767894e1ce1d3befcbf257ddb858e);
+            
+    
+            var marker_fd64b6600c1042118f6b2f17e5738840 = L.marker(
+                [-38.583333, -57.7],
+                {}
+            ).addTo(map_6c89c76fbc7a87502e35681b6318c284);
+        
+    
+                var div_icon_52838fbd3a0b441792bc3f77d6de2a92 = L.divIcon({
+                    className: 'div_icon_52838fbd3a0b441792bc3f77d6de2a92',
+                    iconSize: [150,36],
+                    iconAnchor: [150,0],
+                    html : "Quequen",
+                    });
+                marker_fd64b6600c1042118f6b2f17e5738840.setIcon(div_icon_52838fbd3a0b441792bc3f77d6de2a92);
+            
+    
+            var marker_39fa0dc34e20fab27821d9576711aae3 = L.marker(
+                [-34.6, -58.366667],
+                {}
+            ).addTo(map_6c89c76fbc7a87502e35681b6318c284);
+        
+    
+        var popup_bf86152ef295b9a98ee4af41dfdafb8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d5fe0f1df329be37b64628533f2210dc = $(`<div id="html_d5fe0f1df329be37b64628533f2210dc" style="width: 100.0%; height: 100.0%;">B.Aires</div>`)[0];
+            popup_bf86152ef295b9a98ee4af41dfdafb8c.setContent(html_d5fe0f1df329be37b64628533f2210dc);
+        
+
+        marker_39fa0dc34e20fab27821d9576711aae3.bindPopup(popup_bf86152ef295b9a98ee4af41dfdafb8c)
+        ;
+
+        
+    
+    
+            var marker_f52c4edb8d33c44ffefb65bbd7e24885 = L.marker(
+                [-38.583333, -58.7],
+                {}
+            ).addTo(map_6c89c76fbc7a87502e35681b6318c284);
+        
+    
+        var popup_98b5c5eeba4ce3f8221c6354cef49acc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc134a25fea49f835d7335b4ae0fecea = $(`<div id="html_cc134a25fea49f835d7335b4ae0fecea" style="width: 100.0%; height: 100.0%;">Quequen</div>`)[0];
+            popup_98b5c5eeba4ce3f8221c6354cef49acc.setContent(html_cc134a25fea49f835d7335b4ae0fecea);
+        
+
+        marker_f52c4edb8d33c44ffefb65bbd7e24885.bindPopup(popup_98b5c5eeba4ce3f8221c6354cef49acc)
+        ;
+
+        
+    
+</script>
